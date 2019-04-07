@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>BOOKSHELF</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <link rel="stylesheet" type="text/css" href="Neon.css" />
+    <link rel="shortcut icon" href="images/briefcase.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="Script.js"></script>
+    <script src="bookshelf-lib.js"></script>
+    <script>
+            $(function(){
+                $('.LibruaryBookCapture').height($('.LibruaryBookCapture').width()/0.75);
+                $(window).resize(function(){
+                $('.LibruaryBookCapture').height($('.LibruaryBookCapture').width()/0.75);
+                });
+            });
+            $(window).resize(VarticalAlignBookHeads);
+        </script>
+</head>
+
+<body class="DarkMatter" onload="PageDataUpdate(); VarticalAlignBookHeads();">
+
+    <!--Верхняя панель навигации-->
+    <div class="DarkMatterUpline">
+        <h1 class="Head" onclick="window.location.href='../bookshelf.html'">BOOKSHELF – книжная полка студента-медика
+        </h1>
+    </div>
+
+    <!--Содержимое страницы-->
+    <div class="DarkMatterContent">
+        <div class="LibruaryBookContainer">
+            <div class="LibruaryBookBlock">
+                <img class="LibruaryBookCapture" src="images/anatomy.jpg">
+                <h1 class="LibruaryBookName">Анатомия человека</h1>
+                <button class="LibruaryBookButton"
+                    onclick="window.location.href='subjects/anatomy.html'">Открыть</button>
+            </div>
+            <div class="LibruaryBookBlock">
+                <img class="LibruaryBookCapture" src="images/physics.jpg">
+                <h1 class="LibruaryBookName">Медицинская и биологическая физика</h1>
+                <button class="LibruaryBookButton"
+                    onclick="window.location.href='subjects/physics.html'">Открыть</button>
+            </div>
+            <div class="LibruaryBookBlock">
+                <img class="LibruaryBookCapture" src="images/general-chemistry.jpg">
+                <h1 class="LibruaryBookName">Общая химия</h1>
+                <button class="LibruaryBookButton"
+                    onclick="window.location.href='subjects/general-chemistry.html'">Открыть</button>
+            </div>
+            <div class="LibruaryBookBlock">
+                <img class="LibruaryBookCapture" src="images/biology.jpg">
+                <h1 class="LibruaryBookName">Медицинская биология и генетика</h1>
+                <button class="LibruaryBookButton" onclick="window.location.href='subjects/biology.html'">Открыть</button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!--Footer-->
+    <div class="DarkMatterDownline">
+        <p id="Downline" style="padding: 10px; margin: 0;"></p>
+    </div>
+
+</body>
+
+</html>

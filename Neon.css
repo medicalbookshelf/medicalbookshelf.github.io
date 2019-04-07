@@ -1,0 +1,114 @@
+:root {
+    --color-middle-dark: RGB(48, 58, 76);
+    --color-light-dark: RGB(61, 71, 90); 
+    --color-dark: #252b37;
+    --color-top-dark: #11141a;
+    --color-yellow: RGB(240, 163, 16);
+    --color-orange: RGB(260, 163, 16);
+    --color-dark-orange: RGB(204, 128, 6);
+    --color-grey: RGB(117, 130, 155);
+}
+
+div.LibruaryBookContainer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto 40px auto;
+    overflow: hidden;
+}
+
+div.LibruaryBookBlock {
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    box-sizing: border-box;
+}
+
+h1.LibruaryBookName {
+    display: block;
+    margin: 5px 0 5px 0;
+    padding: 0;
+    color: white;
+    font-size: 120%;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+button.LibruaryBookButton {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    background-color: var(--color-dark);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    text-align: center;
+    transition: 0.4s;
+    outline: none;
+}
+
+button:hover.LibruaryBookButton {
+    background-color: var(--color-orange);
+    cursor: pointer;
+}
+
+button:active.LibruaryBookButton {
+    outline: none;
+    background-color: #ff8c00;
+}
+
+img.LibruaryBookCapture {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin: 20px 0 0 0;
+}
+
+/*Для смартфонов*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /*Библиотека.*/
+
+    div.LibruaryBookContainer {
+        max-width: 1200px;
+        width: 100%;
+        margin: -20px auto 40px auto;
+        overflow: hidden;
+    }
+    
+    div.LibruaryBookBlock {
+        width: 50%;
+        margin: 20px 0 20px 0;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        box-sizing: border-box;
+    }
+    
+    h1.LibruaryBookName {
+        display: block;
+        margin: 5px 0 5px 0;
+        padding: 0;
+        color: white;
+        font-size: 54px;
+        overflow: hidden;
+    }
+    
+    button.LibruaryBookButton {
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        background-color: var(--color-dark);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        font-size: 64px;
+        text-align: center;
+        transition: 0.4s;
+        outline: none;
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');

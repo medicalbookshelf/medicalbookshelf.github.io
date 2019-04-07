@@ -1,0 +1,299 @@
+:root {
+    --color-middle-dark: RGB(48, 58, 76);
+    --color-light-dark: RGB(61, 71, 90);
+    --color-dark: #252b37;
+    --color-top-dark: #11141a;
+    --color-yellow: RGB(240, 163, 16);
+    --color-orange: RGB(260, 163, 16);
+    --color-dark-orange: RGB(204, 128, 6);
+    --color-grey: RGB(117, 130, 155);
+}
+
+body {
+    background-color: var(--color-light-dark);
+    margin: 0;
+    padding: 0;
+}
+
+h1.Head {
+    text-shadow: -1px -1px #000, 0 1px 0 #444;
+    color: var(--color-grey);
+    padding: 15px;
+    margin: 0 0 0 0;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+div.DarkMatterUpline {
+    background-color: var(--color-dark);
+}
+
+div.DarkMatterDownline {
+    background-color: var(--color-dark);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+div.DarkMatterContent {
+    margin: 20px auto 40px auto;
+    min-width: 500px;
+    width: 100%;
+}
+
+details.DarkMatterBookContent {
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+
+summary.DarkMatterBookContent {
+    background-color: #252b37;
+    cursor: pointer;
+    outline: 0;
+    color: white;
+    padding: 5px 0 5px 15px;
+    font-size: 24px;
+    -moz-user-select: none;
+    /*Firefox.*/
+    -ms-user-select: none;
+    /*Internet Explorer.*/
+    -khtml-user-select: none;
+    /*KHTML browsers (e.g. Konqueror).*/
+    -webkit-user-select: none;
+    /*Chrome, Safari, and Opera.*/
+    -webkit-touch-callout: none;
+    /*Disable Android and iOS callouts.*/
+    transition: 0.5s;
+}
+
+summary:hover.DarkMatterBookContent {
+    background-color: #ff8c00;
+}
+
+div.DarkMatterBookChapter {
+    width: 100%;
+    background-color: RGB(48, 58, 76);
+    vertical-align: middle;
+    transition: 0.5s;
+    border-bottom: 1px solid #252b37;
+    border-right: 1px solid #252b37;
+    border-left: 1px solid #252b37;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div:hover.DarkMatterBookChapter {
+    background-color: RGB(68, 78, 96);
+}
+
+p.DarkMatterBookChapter {
+    font-size: 24px;
+    color: white;
+    margin: 5px 0 5px 10px;
+    vertical-align: middle;
+    font-family: "Georgia"inherit;
+    cursor: default;
+}
+
+p.DarkMatterBookChapterSub {
+    font-size: 18px;
+    margin: 5px 0 5px 10px;
+    vertical-align: middle;
+    font-family: "Georgia"inherit;
+    cursor: default;
+    color: #aab6cc;
+}
+
+span.Author {
+    color: var(--color-orange);
+}
+
+a.DarkMatterBookChapter {
+
+    background: #75829b;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    width: 80%;
+    height: 100%;
+    float: right;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 0;
+    transition: 0.5s;
+}
+
+table.DarkMatterBookChapter {
+    width: 100%;
+}
+
+td.DarkMatterBookChapterLeft {
+    width: 80%;
+}
+
+td.DarkMatterBookChapterRight {
+    width: 20%;
+}
+
+a.DarkMatterBookChapter:hover {
+    background: #ff8c00;
+}
+
+div.Return {
+    width: 100%;
+}
+
+button.Return {
+    max-width: 400px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--color-dark);
+    outline: none;
+    padding: 5px;
+    color: white;
+    font-size: 28px;
+    margin: 20px auto 0 auto;
+    transition: 0.4s;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover.Return {
+    background-color: var(--color-orange);
+}
+
+button:active.Return {
+    outline: none;
+}
+
+/*Для смартфонов: горизонтальная и вертикальная ориентация.*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+
+    details.DarkMatterBookContent {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    details.DarkMatterBookContent summary::-webkit-details-marker {
+        font-size: 54px;
+    }
+
+    summary.DarkMatterBookContent {
+        background-color: #252b37;
+        cursor: pointer;
+        outline: 0;
+        color: white;
+        padding: 5px 0 5px 15px;
+        font-size: 54px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        transition: 0.5s;
+    }
+
+    summary:hover.DarkMatterBookContent {
+        background-color: #ff8c00;
+    }
+
+    div.DarkMatterBookChapter {
+        width: 100%;
+        background-color: RGB(48, 58, 76);
+        vertical-align: middle;
+        transition: 0.5s;
+        border-bottom: 3px solid #252b37;
+        border-right: 3px solid #252b37;
+        border-left: 3px solid #252b37;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    div:hover.DarkMatterBookChapter {
+        background-color: RGB(68, 78, 96);
+    }
+
+    p.DarkMatterBookChapter {
+        font-size: 46px;
+        color: white;
+        /*margin: 5px 0 5px 42px;*/
+        vertical-align: middle;
+        display: inline-block;
+        font-family: "Georgia"inherit;
+        cursor: default;
+        width: 90%;
+        box-sizing: padding-box;
+    }
+
+    a.DarkMatterBookChapter {
+        font-size: 40px;
+        background: #75829b;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        border-radius: 5px;
+        transition: 0.2s;
+        width: 100%;
+        height: 100%;
+        float: right;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin: 8px;
+        transition: 0.5s;
+    }
+
+    table.DarkMatterBookChapter {
+        width: 100%;
+    }
+
+    td.DarkMatterBookChapterLeft {
+        width: 80%;
+        box-sizing: padding-box;
+    }
+
+    td.DarkMatterBookChapterRight {
+        width: 20%;
+
+    }
+
+    a.DarkMatterBookChapter:hover {
+        background: #ff8c00;
+    }
+
+    p.DarkMatterBookChapterSub {
+        font-size: 36px;
+        margin: 5px 0 5px 10px;
+        vertical-align: middle;
+        font-family: "Georgia"inherit;
+        cursor: default;
+        color: #aab6cc;
+    }
+
+    button.Return {
+        max-width: 400px;
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        background-color: var(--color-dark);
+        outline: none;
+        padding: 10px;
+        color: white;
+        font-size: 48px;
+        margin: 20px auto 0 auto;
+        transition: 0.4s;
+        display: block;
+        cursor: pointer;
+    }
+}
