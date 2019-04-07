@@ -109,6 +109,10 @@ span.Author {
     color: var(--color-orange);
 }
 
+span.Comment {
+    color: rgb(25, 160, 25);
+}
+
 a.DarkMatterBookChapter {
 
     background: #75829b;
@@ -175,12 +179,6 @@ button:active.Return {
 
 /*Для смартфонов: горизонтальная и вертикальная ориентация.*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-
-
-    details.DarkMatterBookContent {
-        width: 100%;
-        margin: 15px 0 0 0;
-    }
 
     details.DarkMatterBookContent summary::-webkit-details-marker {
         font-size: 54px;
