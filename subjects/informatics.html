@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Английский язык</title>
+    <link rel="stylesheet" type="text/css" href="../Style.css" />
+    <link rel="shortcut icon" href="../images/briefcase.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="../Script.js"></script>
+</head>
+
+<body class="DarkMatter" onload="PageDataUpdate()">
+
+    <!--Верхняя панель навигации-->
+    <div class="DarkMatterUpline">
+        <h1 class="Head">BOOKSHELF – книжная полка студента-медика
+        </h1>
+    </div>
+
+    <div class="return">
+            <button class="Return"  onclick="window.location.href='../index.html'">На главную</button>
+    </div>
+    
+
+    <!--Содержимое страницы-->
+    <div class="DarkMatterContent">
+
+        <details class="DarkMatterBookContent" open>
+            <summary class="DarkMatterBookContent">Учебные материалы</summary>
+            <div class="DarkMatterBookChapter">
+                <table class="DarkMatterBookChapter">
+                        <tr>
+                            <td class="DarkMatterBookChapterLeft">
+                                <p class="DarkMatterBookChapter">TechSmith SnagIt 11.2.0.102</p>
+                                <p class="DarkMatterBookChapterSub">Комментарий: <span class="Comment">Необходимая версия SnagIt для занятий в ГрГМУ.</span></p>
+                            </td>
+                            <td class="DarkMatterBookChapterRight">
+                                <a class="DarkMatterBookChapter"
+                                    href="https://www.dropbox.com/s/dciaccjm3bcw2gs/TechSmith%20SnagIt%2011.2.0.102.exe?dl=1">Скачать
+                                    ⬇</a>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+            
+        </details>
+
+
+    </div>
+
+    <!--Footer-->
+    <div class="DarkMatterDownline">
+        <p id="Downline" style="padding: 10px; margin: 0;"></p>
+    </div>
+
+</body>
+
+</html>

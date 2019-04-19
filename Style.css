@@ -129,7 +129,7 @@ a.DarkMatterBookChapter {
     float: right;
     padding-bottom: 5px;
     padding-top: 5px;
-    margin: 0;
+    margin-right: 10px;
     transition: 0.5s;
 }
 
